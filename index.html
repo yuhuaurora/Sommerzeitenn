@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vier Jahreszeiten</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+  background: #f8f9fa;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+	
+.slide img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.season-gallery img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+}    		
+
+	/* 💡 Grunddesign: Schrift, Farben, Hintergrund */
+body {
+  background: #f8f9fa;
+  font-family: "Segoe UI", sans-serif;
+  color: #333;
+}
+
+/* 💡 Kopfbereich mit Farbverlauf */
+header {
+  background: linear-gradient(135deg, #ff9966, #ff5e62);
+  color: white;
+  text-align: center;
+  padding: 2rem 1rem;
+}
+
+/* 💡 Abstand und Textformat in Abschnitten */
+section {
+  padding: 2rem 0;
+  text-align: center;
+}
+
+/* ---------- 🌅 Slider ---------- */
+.slider {
+  max-width: 700px;
+  margin: auto;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+
+/* 💡 Die Slides liegen nebeneinander – flex hilft dabei */
+.slides {
+  display: flex;
+  transition: transform 1s ease;
+}
+
+/* 💡 Alle Bilder gleich groß – keine Verzerrung! */
+.slide img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+/* ---------- ⚫ Punkte unter dem Slider ---------- */
+.nav-manual label {
+  border: 2px solid #bbb;
+  border-radius: 50%;
+  padding: 4px;
+  margin: 0 5px;
+  cursor: pointer;
+}
+
+/* ---------- 🖼️ Bilder in Galerien ---------- */
+.season-gallery img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* 💡 Kleiner Zoom-Effekt beim Überfahren */
+.season-gallery img:hover {
+  transform: scale(1.05);
+}
+	
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <h1>Die vier Jahreszeiten <br></h1><span>Herbst • Winter • Frühling • Sommer</span>
+
+  </header>
+
+  <main class="container">
+
+    <!-- 🍂 HERBST -->
+    <section>
+      <h2 class="season-title text-danger">🍂 Herbst</h2>
+      <p class="season-text">
+        Der Herbst verzaubert mit warmen Farben, fallenden Blättern und klarer Luft.<br> 
+        Die Natur bereitet sich auf den Winter vor – und wir genießen die goldenen Sonnenstrahlen.
+      </p>
+
+      		<!-- Hier erweitern-->
+
+          <div class="slider">
+           
+            
+            
+          
+            <div class="slides">
+              <div class="slide"><img src="bilder/herbst1.jpg" alt="Herbst 1"></div>
+              <div class="slide"><img src="bilder/herbst2.jpg" alt="Herbst 2"></div>
+            </div>
+          
+            <div class="nav-manual">
+              
+              <input type="radio" name="r1" id="r1" checked>
+            
+
+
+              <label for="r1"></label>
+              <label for="r1"></label>
+
+             <label for="r1"></label>
+
+              
+            
+            </div>
+          </div>
+
+	  
+    </section>
+
+    <!-- ❄️ WINTER -->
+    <section>
+      <h2 class="season-title text-primary">❄️ Winter</h2>
+      <p class="season-text">
+        Klirrende Kälte, glitzernder Schnee und gemütliche Abende drinnen – der Winter <br>bringt Ruhe und Besinnlichkeit.
+      </p>
+
+		<!-- Hier erweitern-->
+    <div class="row g-3 season-gallery">
+      <div class="col-6 col-md-3"><img src="bilder/winter1.jpg" class="img-fluid rounded" alt="Winter 1"></div>
+      <div class="col-6 col-md-3"><img src="bilder/winter2.jpg" class="img-fluid rounded" alt="Winter 1"></div>
+      <div class="col-6 col-md-3"><img src="bilder/winter3.jpg" class="img-fluid rounded" alt="Winter 1"></div>
+      <div class="col-6 col-md-3"><img src="bilder/winter4.jpg" class="img-fluid rounded" alt="Winter 1"></div>
+    </div>
+	  
+	  
+    </section>
+
+    <!-- 🌸 FRÜHLING -->
+    <section>
+      <h2 class="season-title text-success">🌸 Frühling</h2>
+      <p class="season-text">
+        Wenn alles blüht und duftet, beginnt ein neues Jahr voller Leben.<br> Der Frühling steht für Aufbruch und Frische.
+      </p>
+
+     		<!-- Hier erweitern-->
+
+         <div class="row g-3 season-gallery">
+          <div class="col-6 col-md-3"><img src="bilder/fruehling1.jpg" class="img-fluid rounded" alt="Winter 1"></div>
+          <div class="col-6 col-md-3"><img src="bilder/fruehling2.jpg" class="img-fluid rounded" alt="Winter 1"></div>
+          <div class="col-6 col-md-3"><img src="bilder/fruehling3.jpg" class="img-fluid rounded" alt="Winter 1"></div>
+          <div class="col-6 col-md-3"><img src="bilder/fruehling4.jpg" class="img-fluid rounded" alt="Winter 1"></div>
+        </div>
+	 
+    </section>
+
+    <!-- ☀️ SOMMER -->
+    <section>
+      <h2 class="season-title text-warning">☀️ Sommer</h2>
+      <p class="season-text">
+        Sonne, Wärme und Freiheit – der Sommer lädt ein<br> zum Reisen, Genießen und Entspannen am Wasser.
+      </p>
+
+     		<!-- Hier erweitern-->
+         <div class="row g-3 season-gallery">
+          <div class="col-6 col-md-3"><img src="bilder/sommer1.jpg" class="img-fluid rounded" alt="Winter 1"></div>
+          <div class="col-6 col-md-3"><img src="bilder/sommer2.jpg" class="img-fluid rounded" alt="Winter 1"></div>
+          <div class="col-6 col-md-3"><img src="bilder/sommer3.jpg" class="img-fluid rounded" alt="Winter 1"></div>
+          <div class="col-6 col-md-3"><img src="bilder/sommer4.jpg" class="img-fluid rounded" alt="Winter 1"></div>
+        </div>
+    </section>
+
+  </main>
+
+  <footer class="text-center p-3 mt-4 bg-light border-top">
+
+  </footer>
+
+</body>
+</html>
